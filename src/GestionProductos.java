@@ -10,7 +10,7 @@ public class GestionProductos {
     public GestionProductos(String nombreProducto, int cantidadInicial) {
         this.nombreProducto = nombreProducto;
         this.cantidadActual = Math.max(0, cantidadInicial); // no permitimos cantidad negativa al inicio
-        System.out.println("Producto '" + nombreProducto + "' creado con cantidad inicial: " + this.cantidadActual);
+        log("Producto '" + nombreProducto + "' creado con cantidad inicial: " + this.cantidadActual);
     }
 
     // Macias Ariel: implementacion de lo loggers
