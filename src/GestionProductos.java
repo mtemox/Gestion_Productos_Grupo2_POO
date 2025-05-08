@@ -11,4 +11,21 @@ public class GestionProductos {
 
 
     }
+
+    // Macias Ariel: implementacion de lo loggers
+    // Validación interna: la cantidad nunca puede ser negativa
+    private boolean esValida(int cantidad) {
+        return cantidad >= 0;
+    }
+
+    // Logger sencillo
+    private void log(String msg) {
+        System.out.println("[LOG] " + msg);
+    }
+
+    // Getter para la cantidad actual
+    public int getCantidadActual() {
+        return cantidadActual;
+    }
+
 }
