@@ -12,6 +12,7 @@ public class GestionProductos {
         this.cantidadActual = Math.max(0, cantidadInicial); // no permitimos cantidad negativa al inicio
         log("Producto '" + nombreProducto + "' creado con cantidad inicial: " + this.cantidadActual);
     }
+    //Diego Montaluisa
     public void agregarProducto( int cantidad) {
         int nuevaCantidad = cantidadActual + cantidad;
         if (esValida(nuevaCantidad)) {
