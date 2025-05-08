@@ -11,6 +11,15 @@ public class GestionProductos {
 
 
     }
+    public void agregarProducto( int cantidad) {
+        int nuevaCantidad = cantidadActual + cantidad;
+        if (esValida(nuevaCantidad)) {
+            log("Agregando " + cantidad + " unidades al producto " + nombre);
+            cantidadActual = nuevaCantidad;
+        } else {
+            System.out.println("Producto nuevo agregado: " + nombre);
+        }
+    }
 
     // Macias Ariel: implementacion de lo loggers
     // Validación interna: la cantidad nunca puede ser negativa
