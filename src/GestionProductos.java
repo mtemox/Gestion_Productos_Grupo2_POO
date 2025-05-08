@@ -1,14 +1,15 @@
+
 import java.util.Scanner;
-import static java.rmi.server.LogStream.log;
 
 public class GestionProductos {
-    private String nombre;
+    // Atributos
+    private String nombreProducto;
     private int cantidadActual;
-    public GestionProductos(String nombre, int cantidadInicial){
-        this.nombre = nombre;
-        this.cantidadActual = Math.max(0, cantidadInicial);
-        log("Prodcuto"+ nombre + "creado por cantidad inicial: " + this.cantidadActual);
 
-
+    // Constructor
+    public GestionProductos(String nombreProducto, int cantidadInicial) {
+        this.nombreProducto = nombreProducto;
+        this.cantidadActual = Math.max(0, cantidadInicial); // no permitimos cantidad negativa al inicio
+        System.out.println("Producto '" + nombreProducto + "' creado con cantidad inicial: " + this.cantidadActual);
     }
 }
