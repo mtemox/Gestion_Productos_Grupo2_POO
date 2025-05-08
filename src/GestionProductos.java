@@ -7,7 +7,7 @@ public class GestionProductos {
     public GestionProductos(String nombre, int cantidadInicial){
         this.nombre = nombre;
         this.cantidadActual = Math.max(0, cantidadInicial);
-        log(" Productos" + nombre+ " Creado con cantidad inicial: " + this.cantidadActual);
+        log("Prodcuto"+ nombre + "creado por cantidad inicial: " + this.cantidadActual);
 
 
     }
