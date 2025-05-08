@@ -6,7 +6,7 @@ public class GestionProductos {
     private String nombreProducto;
     private int cantidadActual;
 
-    // Constructor
+    // Constructor :)
     public GestionProductos(String nombreProducto, int cantidadInicial) {
         this.nombreProducto = nombreProducto;
         this.cantidadActual = Math.max(0, cantidadInicial); // no permitimos cantidad negativa al inicio
