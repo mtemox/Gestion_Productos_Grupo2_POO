@@ -1,25 +1,14 @@
-
+import java.util.Scanner;
+import static java.rmi.server.LogStream.log;
 
 public class GestionProductos {
+    private String nombre;
+    private int cantidadActual;
+    public GestionProductos(String nombre, int cantidadInicial){
+        this.nombre = nombre;
+        this.cantidadActual = Math.max(0, cantidadInicial);
+        log("Prodcuto"+ nombre + "creado por cantidad inicial: " + this.cantidadActual);
 
 
-    // Metodos para implementar "private boolean esValida(int) y private void log(String)"
-    // Validacion para que la cantidad interna no sea negativa
-    private boolean esValida(int cantidad) {
-        return cantidad >= 0;
     }
-
-    // Creacion de un logger sencillo
-    private void log(String msg) {
-        System.out.println("[LOG]" + msg);
-    }
-
-    // Para obtener la cantidad actual
-    public int getCantidadActual() {
-        return getCantidadActual();
-    }
-
-
-
-
 }
