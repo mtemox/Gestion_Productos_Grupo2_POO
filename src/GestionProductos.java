@@ -12,6 +12,15 @@ public class GestionProductos {
         this.cantidadActual = Math.max(0, cantidadInicial); // no permitimos cantidad negativa al inicio
         log("Producto '" + nombreProducto + "' creado con cantidad inicial: " + this.cantidadActual);
     }
+    public void agregarProducto( int cantidad) {
+        int nuevaCantidad = cantidadActual + cantidad;
+        if (esValida(nuevaCantidad)) {
+            log("Agregando " + cantidad + " unidades al producto " + nombreProducto);
+            cantidadActual = nuevaCantidad;
+        } else {
+            System.out.println("Producto nuevo agregado: " + nombreProducto);
+        }
+    }
 
     // Método para agregar unidades al inventario
     public void agregar(int unidades) {
